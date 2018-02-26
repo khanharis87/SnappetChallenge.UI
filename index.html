@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Snappet UI</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/circles.css">
+    <link rel="stylesheet" href="css/buttons.css">
+    <link rel="stylesheet" href="css/media-queries.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h3>Dashboard / Snappet /</h3>
+        <div class="row">
+            <svg class="gift-logo" width="30" height="40" id="435d0623-bc25-4981-8ea3-94bf2274b9d2" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><title>gift</title><path d="M22.42,10.42a7.67,7.67,0,0,0,3.77-2.5,4.45,4.45,0,0,0,.17-4.37c-.82-1.94-2-2.35-2.8-2.35-1.59,0-3.37,1.49-5.45,4.55A40.34,40.34,0,0,0,16,9.26a40.66,40.66,0,0,0-2.1-3.51C11.82,2.69,10,1.2,8.45,1.2c-.82,0-2,.41-2.8,2.35a4.4,4.4,0,0,0,.17,4.34,7.71,7.71,0,0,0,3.75,2.53M7.22,6.94a2.77,2.77,0,0,1,0-2.74c.37-.87.79-1.32,1.25-1.32,1.53,0,4.08,3.53,5.77,6.61C11.9,9.31,8.36,8.67,7.22,6.94ZM23.55,2.88c.46,0,.88.44,1.25,1.32a2.77,2.77,0,0,1,0,2.74c-1.14,1.72-4.69,2.37-7,2.55C19.48,6.42,22,2.88,23.55,2.88Z"/><path d="M17.7,18.8h8.6V12.2a2,2,0,0,0-2-2H17.7Z"/><path d="M14.3,18.8V10.2H7.7a2,2,0,0,0-2,2v6.6Z"/><path d="M17.7,22.2v8.6h6.6a2,2,0,0,0,2-2V22.2Z"/><path d="M14.3,22.2H5.7v6.6a2,2,0,0,0,2,2h6.6Z"/></svg>
+            <h2>Front-End Challenge</h2>
+        </div>
+    </header>
+    <section class="qa-container">
+        <article class="row options-panel">
+            <object width="30px" height="50px" type="image/svg+xml" data="./assets/icons/balls.svg" class="logo"></object>
+            <object width="30px" height="50px" type="image/svg+xml" data="./assets/icons/person.svg" class="logo"></object>
+            <div class="dropdown">
+                <button onclick="toggleDropdown()" class="dropbtn">Math Grade 5</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a onclick="selectGrade()" href="#" id="math_grade_5">Math grade 5</a>
+                    <a onclick="selectGrade()" href="#" id="math_grade_4">Math grade 4</a>
+                    <a onclick="selectGrade()" href="#" id="math_grade_3">Math grade 3</a>
+                </div>
+            </div>
+            <button class="add-button">
+                Add learning objective
+                <svg class="add-button-icon" width="30px" height="20px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><title>Plus</title><g id="6f243fd7-c556-47e1-8f68-0331adaf55b1" data-name="Layer 2"><g id="2eca55ae-b0da-4acb-a077-deef613d2c13" data-name="path102"><path d="M18.11,28.42c0-3.81,0-6.63,0-10.31H28.42c2.72,0,2.72-4.22,0-4.22H18.11V3.58c0-2.72-4.22-2.72-4.22,0,0,3.81,0,6.63,0,10.31H3.58c-2.72,0-2.72,4.22,0,4.22H13.89V28.42C13.89,31.14,18.11,31.14,18.11,28.42Z"/></g></g></svg>
+            </button>
+            <button class="update-button">
+                Automatic Update
+                <svg class="update-button-icon" width="30px" height="20px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><title>Refresh</title><g id="cad83917-f4af-40e8-a5a7-6e4782600ab2" data-name="Layer 2"><path d="M7.53,7.85A12,12,0,0,1,22.37,6.17l1.91-2.25a.67.67,0,0,1,1.17.32l1.55,7a.67.67,0,0,1-.67.79l-7.19-.39a.67.67,0,0,1-.51-1.11l1.71-2A8.9,8.9,0,1,0,24.89,17a1.54,1.54,0,0,1,3.08.22A12,12,0,1,1,7.53,7.85Z"/></g></svg>
+            </button>
+        </article>
+        <div class="qa-heading">
+            <h4 class="qa-heading-col-1">Learning</h4>
+            <h4 class="qa-heading-col-2">Pupils</h4>
+        </div>
+        <section>
+            <div class="row">
+                <p class="question">123. Doortellen en terugtellen, met sprongen van 3 of meer dan 10 en zelfs meer dan 100</p>
+                <div class="row qa-circles-container">
+                    <div class="circles-row">
+                        <div class="circles dark-blue-circles circle-type-1"></div>
+                        <div class="circles light-blue-circles circle-type-2"></div>
+                    </div>
+                    <div class="circles light-blue-circles circles-row-2"></div>
+                    <div class="circles light-blue-circles circles-row-3"></div>
+                </div>
+                <button class="show-details">Show Details</button>
+            </div>
+            <div class="row">
+                <p class="question">123. Doortellen en terugtellen, met sprongen van 3 of meer dan 10 en zelfs meer dan 100</p>
+                <div class="row qa-circles-container">
+                    <div class="circles-row">
+                        <div class="circles dark-blue-circles circle-type-3"></div>
+                        <div class="circles light-blue-circles circle-type-4"></div>
+                    </div>
+                    <div class="circles-row">
+                        <div class="circles light-blue-circles circles-row-4"></div>
+                        <div class="circles yellow-circles circles-row-5"></div>
+                    </div>
+                    <div class="circles yellow-circles circles-row-6"></div>
+                </div>
+                <button class="show-details">Show Details</button>
+            </div>
+            <div class="row">
+                <p class="question">123. Doortellen en terugtellen, met sprongen van 3 of meer dan 10 en zelfs meer dan 100</p>
+                <div class="row qa-circles-container">
+                    <div class="circles-row">
+                        <div class="circles dark-blue-circles circle-type-3"></div>
+                        <div class="circles light-blue-circles circle-type-4"></div>
+                    </div>
+                    <div class="circles-row">
+                        <div class="circles light-blue-circles circles-row-4"></div>
+                        <div class="circles yellow-circles circles-row-5"></div>
+                    </div>
+                    <div class="circles yellow-circles circles-row-6"></div>
+                </div>
+                <button class="show-details">Show Details</button>
+            </div>
+        </section>
+    </section>
+    <script src="script.js">
+    </script>
+</body>

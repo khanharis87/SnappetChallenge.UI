@@ -1,0 +1,82 @@
+@media only screen and (min-width: 768px) {
+    .dropdown {
+        flex: 0 0 30%;
+        margin-right: auto;
+    }
+
+    .qa-heading {
+        border-bottom: 1px solid black;
+        margin-bottom: 20px;
+    }
+
+    .update-button, .add-button {
+        font-size: 0.8rem;
+        flex: 0 0 25%;
+        margin-top: 0;
+    }
+
+    .update-button-icon, .add-button-icon {
+        width: 10px;
+        height: 10px;
+    }
+
+    .add-button {
+        margin-right: 10px;
+    }
+
+    .question {
+        flex: 0 0 35%;
+    }
+
+    .qa-circles-container {
+        flex: 0 0 35%;
+    }
+
+    .show-details {
+        flex: 0 0 25%;
+        height: 50px;
+    }
+
+    .qa-heading {
+        display: flex!important;
+        flex-flow: row wrap;
+    }
+
+    .qa-heading-col-1 {
+        flex: 0 0 40%;
+        background: url("../assets/icons/down.svg");
+        background-size: 25px 15px;
+        background-position: 75px;
+        background-repeat: no-repeat;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+
+    .qa-container {
+        width: 80%!important;
+        margin: 0 10%!important;
+    }
+
+    .circles-row-3, .circles-row-6 {
+        display: none
+    }
+
+    .update-button, .add-button {
+        font-size: 1rem;
+        margin-top: 10px;
+    }
+
+    .update-button-icon, .add-button-icon {
+        width: 30px;
+        height: 20px;
+    }
+
+    .circles-row-4 {
+        flex: 0 0 74%
+    }
+
+    .circles-row-5 {
+        flex: 0 0 18%;
+    }
+}

@@ -1,0 +1,64 @@
+/** Circle styles**/
+
+.qa-circles-container {
+    flex: 0 0 96%;
+    margin: 0 2%;
+}
+
+.circles-row {
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex: 0 0 96%;
+    margin: 0 2%;
+}
+
+.dark-blue-circles {
+    background-image: radial-gradient(circle, #3498DB 0%, #3498DB 30%, transparent 30%);
+}
+
+.light-blue-circles {
+    background-image: radial-gradient(circle, #F0FAFB 0%, #F0FAFB 30%, transparent 30%);
+}
+
+.yellow-circles {
+    background-image: radial-gradient(circle, yellow 0%, yellow 30%, transparent 30%);
+}
+
+.circles {
+    background-repeat: space;
+    background-size: 25px 50px;
+    background-position: 5px center;
+    height: 50px;
+}
+
+.circle-type-1 {
+    flex: 0 0 46%;
+}
+
+.circle-type-2 {
+    flex: 0 0 50%;
+}
+
+.circle-type-3 {
+    flex: 1 0 20%;
+}
+
+.circle-type-4 {
+    flex: 0 0 76%;
+}
+
+.circles-row-2 {
+    flex: 0 0 94%;
+}
+
+.circles-row-4 {
+    flex: 1 0 85%;
+}
+
+.circles-row-5 {
+    flex: 0 0 10%;
+}
+
+.circles-row-3, .circles-row-6 {
+    flex: 0 0 12%;
+}

@@ -1,0 +1,72 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "Cabin", Arial, Geneva, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    height: 25vh;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    background-color: #3498DB;
+    font-family: "Gill Sans", sans-serif;
+    color: white;
+}
+
+.gift-logo {
+    fill: white;
+    margin-top: 10px;
+}
+
+h3 {
+    margin-top: 10px;
+}
+
+.col {
+    display: flex;
+    align-items: center;
+}
+
+.col-full {
+    flex: 0 0 96%;
+}
+
+.flex-inline {
+    display: inline-flex;
+}
+
+.row {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+
+.options-panel {
+    flex: 0 0 97%;
+    padding: 20px;
+    background-color: white;
+}
+
+.qa-heading {
+    display: none;
+}
+
+.qa-container {
+    width: 96%;
+    height: 35vh;
+    margin: 0 auto;
+    position: absolute;
+    top: 17%;
+    left: 2%;
+}
+
+
